@@ -1,0 +1,160 @@
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão do corpo */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamento interno padrão */
+    background-color: #fff8dc; /* Define a cor de fundo da página */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f4d867; /* Cor de fundo do cabeçalho */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+}
+
+/* Define uma fonte personalizada chamada 'Banana' */
+@font-face {
+    font-family: 'Banana'; /* Nome da fonte */
+    src: url("Nova pasta (3)/Banana.ttf") format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+/* Define uma fonte personalizada chamada 'MinhaFonte' */
+@font-face {
+    font-family: 'MinhaFonte'; /* Nome da fonte */
+    src: url('fonts/Banana.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+/* Estilo para o título do cabeçalho */
+header h1 {
+    font-family: 'MinhaFonte', sans-serif; /* Usa a fonte personalizada */
+    font-size: 54px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    text-shadow: #fff 2px 2px 0; /* Sombra no texto */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Menu de navegação */
+.menu {
+    display: flex; /* Transforma o menu em um contêiner flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 10; /* Remove espaçamento interno */
+    margin: 0; /* Remove margens */
+}
+
+/* Estilo para cada item do menu */
+.menu li {
+    margin: 20px; /* Espaçamento entre os itens do menu */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+/* Estilo para os links do menu */
+.menu a {
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+.menu a:hover {
+    color: #ff9800; /* Cor do texto ao passar o mouse */
+}
+
+/* Conteúdo principal */
+.home-container {
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos adicionais */
+.direitos {
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 20px 0; /* Espaçamento externo */
+    background-color: #7a6200; /* Cor de fundo */
+    padding: 30px; /* Espaçamento interno */
+}
+
+.Principais {
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 50px; /* Espaçamento externo */
+}
+
+/* Estilos para o menu de navegação */
+nav ul li {
+    display: inline-block; /* Exibe os itens em linha */
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+/* Container para as receitas */
+.receitas-container {
+    display: flex; /* Organiza os itens em linha */
+    flex-wrap: wrap; /* Quebra a linha se não couber */
+    justify-content: space-around; /* Distribui o espaço entre os itens */
+    gap: 30px; /* Espaçamento entre os itens */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para cada item de receita */
+.receita-item {
+    width: 300px; /* Aumentei a largura de 200px para 300px */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* Adicionei um fundo branco para melhorar a visibilidade */
+}
+
+/* Efeito ao passar o mouse sobre o item de receita */
+.receita-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para a imagem da receita */
+.receita-item img {
+    width: 100%;
+    height: 200px; /* Aumentei a altura de 150px para 200px */
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para o título da receita */
+.receita-item h3 {
+    font-size: 1.5rem; /* Aumentei o tamanho da fonte do título */
+    margin: 15px 0; /* Ajustei o espaçamento */
+    color: #333;
+}
+
+/* Estilo para o link da receita */
+.receita-item a {
+    display: block;
+    padding: 15px; /* Aumentei o espaçamento interno */
+    background-color: #f4d867;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Aumentei o tamanho da fonte do link */
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o link da receita */
+.receita-item a:hover {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre a logo e o texto */
+}
+
+.logo {
+    align-items:baseline;
+    width: 60px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}

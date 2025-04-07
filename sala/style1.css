@@ -1,0 +1,278 @@
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão do corpo */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamento interno padrão */
+    background-color: #fff8dc; /* Define a cor de fundo da página */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f4d867; /* Cor de fundo do cabeçalho */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+}
+
+/* Define uma fonte personalizada chamada 'Banana' */
+@font-face {
+    font-family: 'Banana'; /* Nome da fonte */
+    src: url("Nova pasta (3)/Banana.ttf") format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+/* Define uma fonte personalizada chamada 'MinhaFonte' */
+@font-face {
+    font-family: 'MinhaFonte'; /* Nome da fonte */
+    src: url('fonts/Banana.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+/* Estilo para o título do cabeçalho */
+header h1 {
+    font-family: 'MinhaFonte', sans-serif; /* Usa a fonte personalizada */
+    font-size: 54px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    text-shadow: #fff 2px 2px 0; /* Sombra no texto */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Menu de navegação */
+.menu {
+    display: flex; /* Transforma o menu em um contêiner flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 10; /* Remove espaçamento interno */
+    margin: 0; /* Remove margens */
+}
+
+/* Estilo para cada item do menu */
+.menu li {
+    margin: 20px; /* Espaçamento entre os itens do menu */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+/* Estilo para os links do menu */
+.menu a {
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+.menu a:hover {
+    color: #ff9800; /* Cor do texto ao passar o mouse */
+}
+
+
+/* Carrossel de receitas */
+.carrossel {
+    position: relative; /* Permite posicionar elementos filhos de forma absoluta */
+    width: 10x; /* Largura total */
+    max-width: 800px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza o carrossel */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa o contêiner */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Contêiner interno do carrossel */
+.carrossel-container {
+    display: flex; /* Alinha os itens horizontalmente */
+    transition: transform 0.5s ease-in-out; /* Transição suave ao mudar de slide */
+}
+
+/* Estilo para cada item do carrossel */
+.carrossel-item {
+    min-width: 100%; /* Cada item ocupa 100% da largura */
+    box-sizing: border-box; /* Inclui padding e borda na largura */
+    position: relative; /* Permite posicionar elementos filhos de forma absoluta */
+    text-align: center; /* Centraliza o conteúdo */
+    min-height: 100%;
+}
+
+
+
+/* Estilo para a imagem do item do carrossel */
+.carrossel-item img {
+    width: 100%; /* Imagem ocupa 100% da largura */
+    display: block; /* Remove espaçamento abaixo da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo para o título do item do carrossel */
+.carrossel-item h3 {
+    position: absolute; /* Posiciona o título de forma absoluta */
+    bottom: 80px; /* Distância do fundo */
+    left: 20px; /* Distância da esquerda */
+    color: #fff; /* Cor do texto */
+    font-size: 2rem; /* Tamanho da fonte */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+}
+
+/* Estilo para a descrição do item do carrossel */
+.carrossel-item p {
+    position: absolute; /* Posiciona a descrição de forma absoluta */
+    bottom: 50px; /* Distância do fundo */
+    left: 20px; /* Distância da esquerda */
+    color: #fff; /* Cor do texto */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+}
+
+/* Estilo para o link do item do carrossel */
+.carrossel-item a {
+    position: absolute; /* Posiciona o link de forma absoluta */
+    bottom: 10px; /* Distância do fundo */
+    left: 20px; /* Distância da esquerda */
+    background-color: hsl(5, 75%, 15%); /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Efeito ao passar o mouse sobre o link do item do carrossel */
+.carrossel-item a:hover {
+    background-color: hsl(5, 75%, 25%); /* Cor de fundo ao passar o mouse */
+}
+
+/* Botões de navegação do carrossel */
+.carrossel-btn {
+    position: absolute; /* Posiciona os botões de forma absoluta */
+    top: 50%; /* Alinha verticalmente no meio */
+    transform: translateY(-50%); /* Ajusta o posicionamento vertical */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove borda */
+    padding: 10px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de ponteiro */
+    border-radius: 50%; /* Transforma em círculo */
+    font-size: 1.5rem; /* Tamanho da fonte */
+}
+
+/* Botão "anterior" do carrossel */
+.carrossel-btn.prev {
+    left: 10px; /* Posiciona o botão à esquerda */
+}
+
+/* Botão "próximo" do carrossel */
+.carrossel-btn.next {
+    right: 10px; /* Posiciona o botão à direita */
+}
+
+/* Conteúdo principal */
+.home-container {
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos adicionais */
+.direitos {
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 20px 0; /* Espaçamento externo */
+    background-color: #7a6200; /* Cor de fundo */
+    padding: 30px; /* Espaçamento interno */
+}
+
+.Principais {
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 50px; /* Espaçamento externo */
+}
+
+/* Estilos para o menu de navegação */
+nav ul li {
+    display: inline-block; /* Exibe os itens em linha */
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+/* Container para as receitas */
+.receitas-container {
+    display: flex; /* Organiza os itens em linha */
+    flex-wrap: wrap; /* Quebra a linha se não couber */
+    justify-content: space-around; /* Distribui o espaço entre os itens */
+    gap: 30px; /* Espaçamento entre os itens */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para cada item de receita */
+.receita-item {
+    width: 200px; /* Largura fixa para cada item */
+    text-align: center; /* Centraliza o conteúdo */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
+}
+
+/* Efeito ao passar o mouse sobre o item de receita */
+.receita-item:hover {
+    transform: translateY(-5px); /* Levanta o item ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+/* Estilo para a imagem da receita */
+.receita-item img {
+    width: 100%; /* Imagem ocupa 100% da largura do item */
+    height: 150px; /* Altura fixa para a imagem */
+    object-fit: cover; /* Garante que a imagem cubra o espaço */
+    border-bottom: 1px solid #ddd; /* Linha abaixo da imagem */
+}
+
+/* Estilo para o link da receita */
+.receita-item a {
+    display: block; /* Transforma o link em bloco */
+    padding: 0px; /* Espaçamento interno */
+    background-color: #f4d867; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse sobre o link da receita */
+.receita-item a:hover {
+    background-color: #ff9800; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+.menu {
+    display: flex; /* Transforma o menu em um contêiner flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 10; /* Remove espaçamento interno */
+    margin: 0; /* Remove margens */
+}
+
+/* Estilo para cada item do menu */
+.menu li {
+    margin: 20px; /* Espaçamento entre os itens do menu */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+/* Estilo para os links do menu */
+.menu a {
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+.menu a:hover {
+    color: #ff9800; /* Cor do texto ao passar o mouse */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre a logo e o texto */
+}
+
+.logo {
+    align-items:baseline;
+    width: 60px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+

@@ -1,0 +1,122 @@
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão do corpo */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamento interno padrão */
+    background-color: #fff8dc; /* Define a cor de fundo da página */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f4d867; /* Cor de fundo do cabeçalho */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 20px; /* Borda arredondada */
+}
+
+/* Define uma fonte personalizada chamada 'Banana' */
+@font-face {
+    font-family: 'Banana'; /* Nome da fonte */
+    src: url("Nova pasta (3)/Banana.ttf") format('truetype'); /* Caminho para o arquivo da fonte */
+}
+/* Define uma fonte personalizada chamada 'MinhaFonte' */
+@font-face {
+    font-family: 'MinhaFonte'; /* Nome da fonte */
+    src: url('fonts/Banana.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+/* Estilo para o título do cabeçalho */
+header h1 {
+    font-family: 'MinhaFonte', sans-serif; /* Usa a fonte personalizada */
+    font-size: 54px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    text-shadow: #fff 2px 2px 0; /* Sombra no texto */
+    margin: 0; /* Remove margens padrão */
+}
+/* Centralizar a imagem e o conteúdo */
+.image1 {
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 35px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Centralizar o conteúdo de ingredientes e modo de preparo */
+section {
+    text-align: center; /* Centraliza todo o conteúdo da seção */
+    margin: 0 auto; /* Centraliza a seção na página */
+    max-width: 600px; /* Define uma largura máxima para o conteúdo */
+    padding: 20px; /* Adiciona um espaçamento interno */
+}
+
+/* Alinhar listas e parágrafos ao centro */
+ul, ol, p {
+    text-align: left; /* Alinha o texto à esquerda dentro do contêiner */
+    display: inline-block; /* Permite centralizar o bloco de texto */
+    margin: 0 auto; /* Centraliza o bloco de texto */
+    padding-left: 20px; /* Adiciona um espaçamento à esquerda para a lista */
+}
+
+/* Estilos para o menu de navegação */
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.direitos {
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 20px 0; /* Espaçamento externo */
+    background-color: #7a6200; /* Cor de fundo */
+    padding: 30px; /* Espaçamento interno */
+}
+
+.menu {
+    display: flex; /* Transforma o menu em um contêiner flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 10; /* Remove espaçamento interno */
+    margin: 0; /* Remove margens */
+}
+
+/* Estilo para cada item do menu */
+.menu li {
+    margin: 20px; /* Espaçamento entre os itens do menu */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+/* Estilo para os links do menu */
+.menu a {
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+.menu a:hover {
+    color: #ff9800; /* Cor do texto ao passar o mouse */
+}
+.modo-preparo {
+    text-align: justify; /* Justifica o texto */
+    margin: 0 auto; /* Centraliza o bloco, se necessário */
+    max-width: 600px; /* Define uma largura máxima para melhor leitura */
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+    line-height: 1.6; /* Melhora a legibilidade com um espaçamento entre linhas */
+}
+.centro {
+    text-align: justify;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre a logo e o texto */
+}
+
+.logo {
+    align-items:baseline;
+    width: 60px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}

@@ -1,0 +1,174 @@
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão do corpo */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamento interno padrão */
+    background-color: #fff8dc; /* Define a cor de fundo da página */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f4d867; /* Cor de fundo do cabeçalho */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 20px /* Borda arredondada */
+}
+
+/* Define uma fonte personalizada chamada 'Banana' */
+@font-face {
+    font-family: 'Banana'; /* Nome da fonte */
+    src: url("Nova pasta (3)/Banana.ttf") format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+/* Define uma fonte personalizada chamada 'MinhaFonte' */
+@font-face {
+    font-family: 'MinhaFonte'; /* Nome da fonte */
+    src: url('fonts/Banana.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+/* Estilo para o título do cabeçalho */
+header h1 {
+    font-family: 'MinhaFonte', sans-serif; /* Usa a fonte personalizada */
+    font-size: 54px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    text-shadow: #fff 2px 2px 0; /* Sombra no texto */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Menu de navegação */
+.menu {
+    display: flex; /* Transforma o menu em um contêiner flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 10; /* Remove espaçamento interno */
+    margin: 0; /* Remove margens */
+}
+
+/* Estilo para cada item do menu */
+.menu li {
+    margin: 20px; /* Espaçamento entre os itens do menu */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+/* Estilo para os links do menu */
+.menu a {
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+.menu a:hover {
+    color: #ff9800; /* Cor do texto ao passar o mouse */
+}
+/* Estilos para o contêiner principal da página "Pesquisa" */
+.pesquisa-container {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para o título da página "Pesquisa" */
+.pesquisa-titulo {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o formulário de pesquisa */
+.pesquisa-form {
+    display: flex; /* Organiza os elementos em linha */
+    justify-content: center; /* Centraliza o formulário */
+    margin-bottom: 40px; /* Espaçamento abaixo do formulário */
+}
+
+/* Estilo para o campo de entrada */
+.pesquisa-input {
+    width: 70%; /* Largura do campo de entrada */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 5px 0 0 5px; /* Bordas arredondadas à esquerda */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+/* Estilo para o botão de pesquisa */
+.pesquisa-botao {
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #f4d867; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 0 5px 5px 0; /* Bordas arredondadas à direita */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.pesquisa-botao:hover {
+    background-color: #ff9800; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo para o contêiner de resultados */
+.resultados-container {
+    margin-top: 20px; /* Espaçamento acima dos resultados */
+}
+
+.resultados-container h2 {
+    font-size: 2rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo para a lista de resultados */
+.resultados-lista {
+    display: flex; /* Organiza os itens em linha */
+    flex-wrap: wrap; /* Quebra a linha se não couber */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para cada item de resultado */
+.resultado-item {
+    width: 100%; /* Largura total */
+    padding: 15px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Cor de fundo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
+}
+
+.resultado-item:hover {
+    transform: translateY(-5px); /* Levanta o item ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+}
+
+.resultado-item h3 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.resultado-item p {
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #555; /* Cor do texto */
+    margin-bottom: 15px; /* Espaçamento abaixo da descrição */
+}
+
+.resultado-item a {
+    display: inline-block; /* Transforma o link em bloco */
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #f4d867; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.resultado-item a:hover {
+    background-color: #ff9800; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
